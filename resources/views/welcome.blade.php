@@ -10,12 +10,15 @@
                             <h2 class="mb-5">Shop For
                                 A Cause</h2>
 
-                            <div class="search-bar input-group mb-4">
-                                <input type="text" class="form-control" placeholder="Search Project Or Product..."
-                                    aria-label="Search our help center" aria-describedby="help-search">
-                                <button class="btn btn-outline-secondary" type="button" id="help-search"><i
-                                        class="icofont-search-1"></i></button>
-                            </div>
+                            <form action="{{ route('search') }}" method="get">
+                                <div class="search-bar input-group mb-4">
+                                    <input type="text" class="form-control" name="term" placeholder="Search Project Or Product..."
+                                        aria-label="Search our help center" aria-describedby="help-search">
+                                    <button class="btn btn-outline-secondary" type="submit" id="help-search">
+                                        <i class="icofont-search-1"></i>
+                                    </button>
+                                </div>
+                            </form>
                             <p>A shopping experience for those who care about changing the world</p>
                         </div>
                     </div>

@@ -44,8 +44,8 @@
                     </a>
                 </div>
 
-                <form action="#" class="header__search">
-                    <input type="text" placeholder="Search project or product">
+                <form action="{{ route('search') }}" method="get" class="header__search">
+                    <input type="text" name="term" placeholder="Search project or product">
                     <button type="button"><i class="icofont-search-2"></i></button>
                     <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
@@ -109,7 +109,7 @@
 
     <!-- ===============//footer section start here \\================= -->
     <footer class="footer-section">
-        <div class="footer-top" style="background-image: url(assets/images/footer/bg.jpg);">
+        <div class="footer-top" style="background-image: url(guests/assets/images/footer/bg.jpg);">
             <div class="footer-newsletter">
                 <div class="container">
                     <div class="row g-4 align-items-center justify-content-center">
@@ -200,8 +200,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p class="text-center py-4 mb-0">All rights reserved &copy; Anftiz || Design By: <a
-                        href="https://themeforest.net/user/labartisan/portfolio">Labartisan</a>
+                <p class="text-center py-4 mb-0">All rights reserved &copy; kindbox
                 </p>
             </div>
         </div>

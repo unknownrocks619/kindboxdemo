@@ -7,9 +7,11 @@
             <div class="section-header">
                 <div class="nft-search">
                     <div class="form-floating nft-search-input">
-                        <input type="text" class="form-control" id="nftSearch" placeholder="Search Author">
-                        <label for="nftSearch">Search Author</label>
-                        <button type="button"> <i class="icofont-search-1"></i></button>
+                        <form action="{{ route('search') }}" method="get">
+                            <input name="term" type="text" class="form-control" id="nftSearch" placeholder="Search Author">
+                            <label for="nftSearch">Search Author</label>
+                            <button type="submit"> <i class="icofont-search-1"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -46,11 +48,6 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div>
-                    <div class="load-btn mt-5">
-                        <a href="all-authors.html" class="default-btn move-bottom">
-                            <span>Load More</span>
-                        </a>
                     </div>
 
                 </div>

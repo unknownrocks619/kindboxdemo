@@ -130,4 +130,16 @@ class ShopController extends Controller
     //    foreach (session())
         // session()->forget('cart');
     }
+
+    public function search_result(Request $request) {
+        // check in product
+        $product_search = Product::where('product_name','like','%'.$request->term.'%')
+                                ->get();
+        // check in project
+
+        $project_search = Project::where('project_title','like','%'.$request->term.'%')->get();
+
+        return view('pages.search.index',compact('product_search','project_search'));
+
+    }
 }

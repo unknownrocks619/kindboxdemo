@@ -59,7 +59,7 @@ Route::prefix('shop')
             Route::post('/add-to-cart/{product}',[ShopController::class,"add_to_cart"])->name('add_to_cart');
             Route::post('/checkout/',[ShopController::class,"checkout"])->name('checkout');
         });
-
+Route::get('/search',[ShopController::class,"search_result"])->name('search');
 Route::prefix('projects')
         ->name('projects.')
         ->group(function () {
