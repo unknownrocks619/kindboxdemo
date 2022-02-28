@@ -207,7 +207,7 @@
                         confirmButtonText: 'Cool'
                         }).then((result) => {
                             if (result.isConfirmed) {
-                                window.location.href=  response.reload;
+                                window.location.href=  "http://demo.chakra-tech.com";
                             }
                         })
                 }
